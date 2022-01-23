@@ -1,0 +1,57 @@
+﻿<Window x:Class="WpfDeliveryApp.AvtorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDeliveryApp"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow" FontSize="16"
+         Icon="/Resource/icon.png"
+        Title="Авторизация" Height="350" Width="400">
+    <Grid Background="#FFC3DEFC">
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0">
+            <Image Source="/Resource/login.png" Width="100"/>
+        </StackPanel>
+        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Логин:"></TextBlock>
+            <TextBox Name="txbLogin" Width="300"></TextBox>
+            <TextBlock Text="Пароль:"></TextBlock>
+            <StackPanel Orientation="Horizontal" Name="HiddenPsw">
+                <PasswordBox Name="psbPassword" Width="275.5" PasswordChanged="psbPassword_PasswordChanged_1"></PasswordBox>
+                
+                <Button Name="SeeBtn" Width="25" Click="SeeBtn_Click" Background="White" BorderBrush="White">
+                    <Image Source="/Resource/see.png"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Name="VisiblePsw" Visibility="Collapsed">
+                <TextBox Name="txbPassword" Width="275.5"></TextBox>
+
+                <Button Name="HideseeBtn" Width="25" Click="HideseeBtn_Click" Background="White" BorderBrush="White">
+                    <Image Source="/Resource/hidesee.png"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+
+                <Button Content="Войти" Width="145" Margin="0,0,11,0" IsDefault="True" Name="Login" Click="Login_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                
+                    <Button Content="Отмена" Width="145" Name="Cancel" Click="Cancel_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                
+                </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

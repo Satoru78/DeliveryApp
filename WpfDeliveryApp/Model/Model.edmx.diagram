@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="93d81afd63a44526a606927d9eb99827" Name="Diagram1">
+        <EntityTypeShape EntityType="DileveryBaseModel.Basket" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DileveryBaseModel.Client" Width="1.5" PointX="6" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DileveryBaseModel.ComputerDetails" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DileveryBaseModel.Executer" Width="1.5" PointX="6" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DileveryBaseModel.Order" Width="1.5" PointX="8.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DileveryBaseModel.Role" Width="1.5" PointX="8.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DileveryBaseModel.Status" Width="1.5" PointX="6" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DileveryBaseModel.Type" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DileveryBaseModel.User" Width="1.5" PointX="11" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="DileveryBaseModel.FK_Basket_ComputerDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="DileveryBaseModel.FK_Basket_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="DileveryBaseModel.FK_Order_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DileveryBaseModel.FK_ComputerDetails_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="DileveryBaseModel.FK_Order_ComputerDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="DileveryBaseModel.FK_Order_Executer" ManuallyRouted="false" />
+        <AssociationConnector Association="DileveryBaseModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DileveryBaseModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
