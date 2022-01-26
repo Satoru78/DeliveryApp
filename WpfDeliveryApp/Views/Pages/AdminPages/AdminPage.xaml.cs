@@ -24,5 +24,11 @@ namespace WpfDeliveryApp.Views.Pages.AdminPages
         {
             InitializeComponent();
         }
+        private void ExecuterBtnView_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ExecuterDataPage());
+        }
+
+       
     }
 }

@@ -125,6 +125,12 @@
     <Compile Include="Views\Pages\AdminPages\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\AdminPages\ExecuterActionPage.xaml.cs">
+      <DependentUpon>ExecuterActionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\AdminPages\ExecuterDataPage.xaml.cs">
+      <DependentUpon>ExecuterDataPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\ExecuterPages\ExecuterPage.xaml.cs">
       <DependentUpon>ExecuterPage.xaml</DependentUpon>
     </Compile>
@@ -141,6 +147,14 @@
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\Pages\AdminPages\AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\AdminPages\ExecuterActionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\AdminPages\ExecuterDataPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
